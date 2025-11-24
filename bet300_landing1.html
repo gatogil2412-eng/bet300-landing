@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bet300 - Plataforma Verificada</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 30px;
+            padding: 50px 40px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .logo-container {
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo-text {
+            font-size: 48px;
+            font-weight: 900;
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FF6347 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+            letter-spacing: 2px;
+        }
+
+        .verified-badge {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            font-size: 28px;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .checkmark {
+            width: 35px;
+            height: 35px;
+            background: #4CAF50;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+        }
+
+        .subtitle {
+            font-size: 24px;
+            color: #4CAF50;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .message-box {
+            background: #2c3e50;
+            color: white;
+            padding: 20px 30px;
+            border-radius: 15px;
+            font-size: 18px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: white;
+            text-decoration: none;
+            padding: 18px 50px;
+            border-radius: 50px;
+            font-size: 20px;
+            font-weight: 700;
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .whatsapp-btn:before {
+            content: '📱';
+            margin-right: 10px;
+            font-size: 24px;
+        }
+
+        .whatsapp-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(37, 211, 102, 0.6);
+        }
+
+        .whatsapp-btn:active {
+            transform: translateY(-1px);
+        }
+
+        .stats-banner {
+            background: linear-gradient(135deg, #00b4d8 0%, #0077b6 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0, 180, 216, 0.3);
+        }
+
+        .stats-banner .emoji {
+            margin-right: 10px;
+        }
+
+        .trustpilot {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 15px;
+            border: 2px dashed #ddd;
+            border-radius: 10px;
+            font-size: 16px;
+            color: #666;
+        }
+
+        .stars {
+            color: #00b67a;
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+
+        .rating-label {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .rating-text {
+            color: #666;
+        }
+
+        /* Animación de pulso para el botón */
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+            }
+            50% {
+                box-shadow: 0 10px 30px rgba(37, 211, 102, 0.7);
+            }
+            100% {
+                box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+            }
+        }
+
+        .whatsapp-btn {
+            animation: pulse 2s infinite;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 25px;
+            }
+
+            .logo {
+                width: 160px;
+                height: 160px;
+            }
+
+            .logo-text {
+                font-size: 38px;
+            }
+
+            .verified-badge {
+                font-size: 22px;
+            }
+
+            .subtitle {
+                font-size: 20px;
+            }
+
+            .message-box {
+                font-size: 16px;
+                padding: 15px 20px;
+            }
+
+            .whatsapp-btn {
+                padding: 15px 40px;
+                font-size: 18px;
+            }
+
+            .stats-banner {
+                font-size: 14px;
+                padding: 12px 20px;
+            }
+        }
+
+        /* Efecto de brillo en el logo */
+        @keyframes shine {
+            0% {
+                background-position: -200px;
+            }
+            100% {
+                background-position: 200px;
+            }
+        }
+
+        .logo {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -200px;
+            width: 200px;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            animation: shine 3s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo-container">
+            <div class="logo">
+                <div class="logo-text">BET300</div>
+            </div>
+        </div>
+
+        <!-- Badge Verificado -->
+        <div class="verified-badge">
+            <div class="checkmark">✓</div>
+            Plataforma Verificada
+            <div class="checkmark">✓</div>
+        </div>
+
+        <!-- Subtítulo -->
+        <div class="subtitle">
+            Casino de Confianza
+        </div>
+
+        <!-- Mensaje -->
+        <div class="message-box">
+            Te estamos conectando con nuestro equipo vía WhatsApp.
+        </div>
+
+        <!-- Botón de WhatsApp -->
+        <a href="https://wa.me/543416402327" class="whatsapp-btn" target="_blank">
+            Ir a WhatsApp Ahora
+        </a>
+
+        <!-- Banner de estadísticas -->
+        <div class="stats-banner">
+            <span class="emoji">🎰</span>
+            <strong>+10.000 CLIENTES GANANDO</strong> todos los días
+        </div>
+
+        <!-- Trustpilot -->
+        <div class="trustpilot">
+            <span class="rating-label">"Excelente"</span>
+            <span class="stars">★★★★★</span>
+            <span class="rating-text">Calificación 4.95 en</span>
+            <span style="color: #00b67a; font-weight: 700;">★ Trustpilot</span>
+        </div>
+    </div>
+</body>
+</html>
